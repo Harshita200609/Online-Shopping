@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping | Beauty Store</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        /* Header */
+        header {
+            background-color: #ff385c;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1rem;
+            font-size: 1.1rem;
+        }
+
+        .navbar a:hover {
+            color: #ffddc1;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background: #fff0f3;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #ff385c;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        /* Product Listing */
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-info p {
+            color: #999;
+            margin-bottom: 1rem;
+        }
+
+        .product-info button {
+            background-color: #ff385c;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product-info button:hover {
+            background-color: #ff647d;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #ff385c;
+            color: #fff;
+            margin-top: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <h1>Beauty Store</h1>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Offers</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Our Beauty Store</h1>
+        <p>Find the best beauty products, skincare, and fragrances just for you!</p>
+    </section>
+
+    <!-- Product Listing Section -->
+    <section class="product-container">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="photo 4.jpg" style="width: 100%; height: auto;" alt="Product 1">
+            <div class="product-info">
+                <h3>Product 1</h3>
+                <p>$25.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="photo 3.jpg" style="width: 100%; height: auto;" alt="Product 2">
+            <div class="product-info">
+                <h3>Product 2</h3>
+                <p>$30.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="photo 2.jpg" style="width: 100%; height: auto;" alt="Product 3">
+            <div class="product-info">
+                <h3>Product 3</h3>
+                <p>$20.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <img src="\photo 1.webp" style="width: 100%; height: auto;" alt="Product 4">
+            <div class="product-info">
+                <h3>Product 4</h3>
+                <p>$15.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Beauty Store | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
